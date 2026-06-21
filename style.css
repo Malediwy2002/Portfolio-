@@ -1,0 +1,31 @@
+body
+{
+    margin: 0 auto;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+}
+nav
+{
+    background-color: rgba(240, 255, 255, 0.507);
+    border-bottom: 1px solid #ccc;
+    backdrop-filter: blur(8px);
+    width: 100vw;
+    padding: 4px;
+    text-align: center;
+}
+
+main
+{
+    padding: 50px 40px;
+    width: 100vh;
+    display: flex;
+    justify-self: center;
+}
+section
+{
+    margin: 0;
+    width: 50%;
+    border: 1px solid #bbb;
+    height: 200px; 
+}
