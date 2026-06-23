@@ -1,3 +1,8 @@
+:root
+{
+    font-size: 16px;
+}
+
 *
 {
     margin: 0 auto;
@@ -11,20 +16,64 @@ body
     text-align: center;
 }
 
-#grid-container
+main
+{
+margin: 0 auto;
+
+}
+
+h1
+{
+    font-weight: 600;
+    color: #fff;
+    font-size: 5rem;
+    line-height: 80%; 
+    letter-spacing: -5%;
+    font-family:  "Cantarell", sans-serif;
+}
+
+a
+{
+    text-decoration: none;
+    color: #fff;
+}
+a:hover
+{
+    color: #aaa;
+    cursor: pointer;
+}
+
+.contact_btn
+{
+    font-weight: 600;
+}
+
+.inline
+{
+    display: grid;
+   grid-template-columns: 100px 100px;
+   gap: 2rem;
+    margin: 0 auto;
+}
+
+.grid-container
 {
     box-sizing: border-box;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-
-    justify-content: center;
-    align-items: center;
     width: 100vw;
     min-height: 100vh;
-    padding: 0 10vw;
-    background-image: linear-gradient(45deg, #5f0e5d, #2f0939, #2b072f);
-    box-shadow: inset 0 0 60px 5px #333;
+}
 
+#hero
+{
+    background-image: url(img/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0 10vw;
+    box-shadow: inset 0px 0px 300px 8px #141414;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    justify-content: center;
+    align-items: center;
 }
 
 #tech_promo
@@ -32,35 +81,28 @@ body
     width: 100%;
     height: 500px;
     display: grid;
-    grid-template-columns: 80px 300px;
-    grid-auto-rows: auto;
+    grid-template-columns: 80px 150px;
+    grid-auto-rows: 70px;
     margin: 0;
     justify-content: center;
+    align-content: center;
     align-items: center;
     color: #fff;
     font-size: 30px;
-    border-left: 0.5px solid #dddddda2;
 }
-@media(width <875px)
-{
-    #tech_promo
-    {
-        border: none;
-    }
-}
+
 .tech_name
 {
     text-align: left;
 }
-#name > h1
-{
-    color: #fff;font-size: 70px; 
-    line-height: 200%;
-}
+ 
 #name > p
 {
+    margin: 2rem 0;
     font-family: "Inder", sans-serif;
-    background: linear-gradient(90deg, #F9D423 0%, #FF4E50 100%);
+    font-size: 2rem;
+    letter-spacing: 20%;
+    background: linear-gradient(to right top, #c7ab1e 0%, #FF4E50 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -78,12 +120,6 @@ nav
     font-weight: 300;
 }
 
-main
-{
-margin: 0 auto;
-
-}
-
 #grid-container > *
 {
     z-index: 1;
@@ -96,7 +132,7 @@ margin: 0 auto;
     margin: 0;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content:center;
     align-content: center;
     color: #fff;
     font-size: 30px;
