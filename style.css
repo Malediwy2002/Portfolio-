@@ -63,12 +63,13 @@ a:hover
     width: 100vw;
     min-height: 100vh;
 }
-
+/* background graphic https://unsplash.com/photos/abstract-purple-wave-gradient-background-seA-FPPXL-M */
 #hero
 {
     background-image: url(img/bg.jpg);
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
     padding: 0 10vw;
     box-shadow: inset 0px 0px 300px 8px #141414;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
