@@ -24,7 +24,7 @@ nav
     width: 100vw;
     padding: 4px;
     text-align: center;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: "Lato", sans-serif;
     font-weight: 300;
 }
 
@@ -64,6 +64,7 @@ video
 {
     background-color: transparent;
     object-fit: cover;
+    width: 60vw;
 }
 
 .contact_btn
@@ -84,7 +85,6 @@ video
 {
     box-sizing: border-box;
     display: grid;
-    width: 100vw;
     min-height: 100vh;
     overflow: hidden;
 }
@@ -95,6 +95,7 @@ video
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    width: 100vw;
     padding: 0 10vw;
     box-shadow: inset 0px 0px 300px 8px #141414;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -171,7 +172,26 @@ video
         align-items: end;
         padding: 2rem;
 }
+@media (width< 872px)
+{
+    #demo-1
+    {
+        align-items: center;
+        max-height: min-content;
+    }
+}
+
+@media (width< 500px)
+{
+    #demo-1
+    {
+        align-items: start;
+        max-height: min-content;
+    }
+}
+
+
 #demo-1 video
 {
-    filter: drop-shadow(0px 200px 200px rgba(54, 54, 54, 0.8));
+    filter: drop-shadow( 0 3px 200px rgba(94, 94, 94, 0.8));
 }
