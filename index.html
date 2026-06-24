@@ -34,20 +34,35 @@
                     <div class="tech_name">JavaScript</div>
                     <div><img src="img/figma.png"/></div>
                     <div class="tech_name">Figma</div>
-                    
-
                 </article>
             </div>
             <div id="demo-1" class="grid-container">
-                
-                <video autoplay loop muted playsinline >
-                        <source src="img/Demo Moodle.mov" type="video/mp4"; codecs="hvc1">
-                        
+                <div id="demo-1-1">
+                    <video id="video1" autoplay loop muted playsinline >
+                    
+                    <script>
+                        const video = document.getElementById('video1');
 
-                        
-                </video>
+                        const isSafari =/^((?!chrome|android).)*safari/i.test(navigator.userAgent);
 
-                
+                            if (isSafari) {
+                                video.innerHTML = '<source src="img/Demo Moodle.mov" type=\'video/mp4; codecs="hvc1"\'>';
+                                console.log("To jest Mov");
+                            } else {
+                                video.innerHTML = '<source src="img/Demo Moodle.webm" type="video/webm">';
+                                console.log("To jest webm");
+                                    }
+                            video.load();
+                    </script>
+                   <!-- <source src="img/Demo Moodle.webm" type="video/webm">
+                    <source src="img/Demo Moodle.mov" type="video/mp4"; codecs="hvc1">-->       
+                    </video>
+                </div>
+                <div id="demo-1-2">
+                    <h1>Baza pytań do Moodle stowrzona w <strong>moment!</strong></h1>
+                    <p>Sszybko, intuicyjnie i bez błędów</p>
+                    <p>Automatyzacja, która po porstu działa!</p>
+                </div>
             </div>
 
         </main>
